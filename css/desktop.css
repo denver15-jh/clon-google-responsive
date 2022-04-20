@@ -1,0 +1,11 @@
+/* MEDIAQUERIES */
+
+@media(min-width: 1201px){
+
+    /* Footer - Sección dos*/
+
+    .container-enlaces__links_seccion-dos{
+        justify-content: space-between; 
+    }
+
+}

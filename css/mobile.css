@@ -1,0 +1,294 @@
+:root{
+
+    /*Tipografía*/
+
+	--font-general: Arial, Helvetica, sans-serif;;
+
+    /*Colores*/
+
+    --color-transparent: transparent;
+    --black-strong: black;
+    --black-opacity-uno: rgba(0,0,0,0.1);
+    --white-standar: white;
+    --gray-strong: gray;
+    --gray-middel: #dfe1e5;
+    --gray-opacity-uno: rgba(60,64,67,0.08);
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem ;
+    font-family: var(--font-general);
+}
+
+/* 1.- Header */
+
+.container-header{
+    width: 100%;
+    height: 6rem;
+}
+
+/* Header - Nav */
+.container-nav{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
+}
+
+/* Header - Nav - Seccion Uno */
+
+.container-nav__container-seccion-links{
+    margin-right: 1rem;
+}
+
+.container-nav__ul-seccion-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    list-style: none;
+}
+
+.container-nav__li-container-links--first-link{
+    margin-right: 1.5rem;
+}
+
+.container-nav__link{
+    text-decoration: none;
+    cursor: pointer;
+    height: 5rem;
+    width: 10rem;
+    color: var(--black-strong);
+}
+
+.container-nav__link:hover{
+    text-decoration: underline;
+}
+
+/* Header - Nav - Seccion Dos */
+
+.container-nav__container-seccion-menu-avatar{
+
+}
+
+.container-nav__ul-seccion-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    list-style: none;
+}
+
+.container-nav__li-menu-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem; 
+    background-color: var(--color-transparent);
+    border: 0.6rem solid var(--color-transparent);
+    padding: 1.5rem;
+    border-radius: 100%;
+}
+
+.container-nav__li-menu-avatar:hover{
+    border-radius: 100%;
+    background-color: var(--black-opacity-uno);
+    border: 0.6rem solid var(--black-opacity-uno);
+    padding: 1.5rem;
+    
+}
+
+.container-nav__link-menu-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+    border: 0.6rem solid var(--color-transparent);
+    padding: 1.5rem;
+}
+
+.container-nav__container-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-nav__imagen-menu-avatar--icon-menu{
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.container-nav__imagen-menu-avatar--icon-avatar-redondo{
+    border-radius: 100%;
+}
+
+/* 2.- Main */
+
+.main-container-principal{
+        margin: 11rem 0;
+        flex: 1 0 auto;
+}
+
+.container-image-input-buttoms{
+    margin: 0 2rem;
+}
+
+/* Main - logo de google */
+
+.container-image-input-buttoms__seccion-imagen{
+    margin-bottom: 2.7rem;
+    text-align: center;
+}
+
+/* Main - Input Search*/
+
+.container-image-input-buttoms__seccion-input{
+    background-color: var(--white-standar);
+    border: 0.1rem solid var(--gray-middel);
+    border-radius: 3rem;
+    max-width: 58rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.container-image-input-buttoms__seccion-input:hover{
+    cursor: default;
+    box-shadow: 0 0.1rem 0.6rem var(--gray-middel);
+}
+
+.container-image-input-buttoms__input[type="text"]{
+    width: 100%;
+    height: 4.4rem;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+}
+
+.container-image-input-buttoms__container-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-image-input-buttoms__container-input{
+    width: 100%;
+}
+
+.container-image-input-buttoms__container-icon-search i{
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    color: var(--gray-strong);
+}
+
+.container-image-input-buttoms__image-voice{
+    padding: 0 1.5rem;
+    font-size: 2rem;
+}
+
+/* Main - Buttons */
+
+.container-image-input-buttoms__seccion-botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-image-input-buttoms__botones-search-google{
+    height: 3.6rem;
+    padding: 0 1.6rem;
+    background-color: var(--gray-opacity-uno);
+    border: none;
+    margin: 0 0.5rem;
+    outline: none;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--color-transparent);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.container-image-input-buttoms__botones-search-google:hover{
+    border: 0.1rem solid var(--gray-middel);
+    box-shadow: 0 0.1rem 0.6rem var(--gray-middel);
+}
+
+/* 3.- Footer */
+
+.footer-container-principal{
+    background-color: var(--gray-middel);
+    flex-shrink: 0;
+}
+
+.container-enlaces{
+    width: 100%;
+    height: auto;
+    background-color: var(--gray-middel);
+    padding: 0 1.8rem;
+}
+
+/* Footer - Sección uno */
+
+.container-enlaces__link-section-uno{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.container-enlaces__li-container-pais, .container-enlaces__li-container-links-left, .container-enlaces__li-container-links-right{
+    padding: 1.6rem;
+}
+
+.container-enlaces__enlace-pais{
+    text-decoration: none;
+    cursor: default;
+    color: var(--black-strong);
+    white-space: nowrap;
+    font-size: 1.4rem;
+}
+
+/* Footer - Sección dos */
+
+.container-enlaces__links_seccion-dos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-enlaces__ul-container-pais, .container-enlaces__ul-container-links-left, .container-enlaces__ul-container-links-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.container-enlaces__links-left, .container-enlaces__links-right{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--black-strong);
+    white-space: nowrap;
+    font-size: 1.4rem;
+}
+
+.container-enlaces__links-left:hover, .container-enlaces__links-right:hover{
+    text-decoration: underline;
+}
