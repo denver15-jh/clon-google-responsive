@@ -193,6 +193,10 @@ body{
     width: 100%;
 }
 
+.container-image-input-buttoms__input::placeholder{
+    color: var(--color-transparent);
+}
+
 .container-image-input-buttoms__container-icon-search i{
     padding: 0 1.5rem;
     font-size: 1.5rem;
